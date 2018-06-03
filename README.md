@@ -1,5 +1,6 @@
 # seastar_example
 
+build 
 ```
 docker pull scylladb/scylla-build-dependencies-docker:fedora-28
 
@@ -30,13 +31,13 @@ g++ -std=c++11  -I /seastar -L /usr/lib64  `pkg-config --cflags --libs /seastar/
 
 
 
-### 3.run server
+run server
 
 ```
 ./server --port=13001 --smp=12
 ```
 
-### 4.run client
+run client
 
 ```
 ./client --smp=12 --server=your_ip:13001 --conn=12
