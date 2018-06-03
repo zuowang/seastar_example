@@ -25,7 +25,7 @@ using namespace net;
 
 using clock_type = lowres_clock;
 
-static size_t buf_size = 128; //128;//1600;
+static size_t buf_size = 1024*1024; //128;//1600;
 static std::string str_txbuf(buf_size, 'X'); 
 
 struct system_stats {
